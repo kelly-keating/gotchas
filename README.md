@@ -26,20 +26,26 @@ heroku config:add PGSSLMODE=no-verify
 
 ## NPM
 
-Unhandled rejection Error: Cannot find module '[stuff here]\binding\[blah blah]\node_sqlite3.node'
-``` sh
-npm install sqlite3 --build-from-source
-```
-
-????
-
-``` sh
-sudo apt install build-essential python
-```
-
 Unknown command: python - but they have python3
 ``` sh
 sudo apt install python-is-python3
+```
+'make not found' error
+```sh 
+sudo apt-get install build-essential python
+```
+if that fails to fetch, run this update command and then try again
+```sh
+sudo apt-get update
+```
+they may then get a 'python not found' error if the first command failed
+```sh
+sudo apt-get install python
+npm i sqlite3
+```
+Unhandled rejection Error: Cannot find module '[stuff here]\binding\[blah blah]\node_sqlite3.node'
+``` sh
+npm install sqlite3 --build-from-source
 ```
 
 ## Many to many
