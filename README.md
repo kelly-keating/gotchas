@@ -24,14 +24,12 @@ Not a secure connection to pg so build fails
 heroku config:add PGSSLMODE=no-verify
 ```
 
-## NPM
+## NPM - sqlite3
 
 Unknown command: python - but they have python3
 ``` sh
 sudo apt install python-is-python3
 ```
-
-#### When installing sqlite3
 Unhandled rejection Error: Cannot find module '[stuff here]\binding\[blah blah]\node_sqlite3.node'
 ``` sh
 npm install sqlite3 --build-from-source
