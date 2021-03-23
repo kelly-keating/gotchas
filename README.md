@@ -7,6 +7,9 @@ __Error: event.persist__ - you're accessing the method currentTarget on a releas
 ``` sh
 npm i react@17 react-dom@17
 ```
+cannot find module 'fs'
+
+- check for auto imports from the backend (e.g. request from express)
 
 ## Git credentials
 
