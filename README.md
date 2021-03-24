@@ -14,10 +14,9 @@ cannot find module 'fs'
 ## Git credentials
 
 ``` sh
-git config --unset credential.helper 'cache'
-git config --global --unset credential.helper 'cache'
+sudo git config --system --unset credential.helper
 
-git config --global --set credential.helper 'cache --timeout=10800'
+git config --global --set credential.helper 'cache --timeout=10800' // <-- this may be wrong?
 ```
 
 ## Heroku
