@@ -21,7 +21,7 @@ git config --global --set credential.helper 'cache --timeout=10800' // <-- this 
 
 ## Heroku
 
-Not a secure connection to pg so build fails, complains about `no pg_hba.conf entry ... SSL off`
+Complains about `no pg_hba.conf ... SSL off` aka not a secure connection to pg so build fails
 ```sh
 heroku config:add PGSSLMODE=no-verify
 ```
